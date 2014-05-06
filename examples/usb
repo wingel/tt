@@ -1,0 +1,5 @@
+set port /dev/ttyUSB0
+set speed 115200
+set flow none
+set modem off
+connect

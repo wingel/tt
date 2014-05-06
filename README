@@ -1,4 +1,0 @@
-A simple terminal program.
-
-Move the file "sparc" to $HOME/.tt/sparc and run "tt sparc" to execute
-all the commands in the script file on startup.

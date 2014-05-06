@@ -1,6 +1,0 @@
-set port /dev/ttyS0
-set speed 9600
-set flow none
-set modem on
-log append /home/wingel/tmp/sparc.log
-connect

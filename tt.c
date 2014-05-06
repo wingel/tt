@@ -1,5 +1,7 @@
-/* Copyright 2001-2002 Christer Weinigel <wingel@hack.org>.  All
-   rights reserved.  See the file COPYING for more information.  */
+/* Copyright 2001-2014 Christer Weinigel <christer@weinigel.se>
+
+   This software is licensed under the MIT License.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -392,7 +394,7 @@ reconnect:
 		fprintf(stderr, "Connected, press \\%03o C to quit\n", escape_char);
 		setup_tty();
 	    }
-	} 
+	}
 	else if (FD_ISSET(term_fd, &readfds))
 	{
 	    char buf[1024];
