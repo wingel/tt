@@ -1,4 +1,4 @@
-/* Copyright 2001-2014 Christer Weinigel <christer@weinigel.se>
+/* Copyright 2001-2015 Christer Weinigel <christer@weinigel.se>
 
    This software is licensed under the MIT License.
 */
@@ -255,7 +255,8 @@ reconnect:
 
 	FD_ZERO(&readfds);
 	FD_SET(0, &readfds);
-	FD_SET(term_fd, &readfds);
+	if (term_fd != -1)
+	    FD_SET(term_fd, &readfds);
 	tv.tv_sec = 1;
 	tv.tv_usec = 0;
 

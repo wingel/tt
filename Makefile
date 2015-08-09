@@ -1,5 +1,6 @@
-CC=gcc
-CFLAGS=-Wall -O2
+CC := gcc
+CFLAGS := -Wall -O2 -g
+LDFLAGS := -g
 
 TARGETS=tt
 
